@@ -1,0 +1,6 @@
+<h1>Our food</h1>
+
+<% @posts.each do |post| %>
+  <h1><%= post.food %></h1>
+  <p><%= post.description %></p>
+<% end %>
