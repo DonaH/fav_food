@@ -17,6 +17,15 @@
         <%= f.text_field :author %>
     </div>
 
+    <div>
+        <%= f.label :picture %>
+        <%= f.file_field :picture %>
+    </div>
+
+    <div style="width: 175px; height: 100px;">
+      <%= image_tag @post.picture.url %>
+    </div>
+
     <%= f.submit "Add new post!" %>
 
 <% end %>

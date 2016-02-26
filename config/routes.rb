@@ -3,23 +3,15 @@ Rails.application.routes.draw do
   resources :users
 
   get 'sessions/new' => "sessions#new"
-
   get 'sessions/create' => "sessions#create"
-
   get 'sessions/destroy' => "sessions#destroy"
 
   # get 'users/index' => "users#index"
-  #
   # get 'users/show' => "users#show"
-  #
-  # get 'users/new' => "users#new"
-  #
+  # get 'users/new' => "posts#new"
   # get 'users/create' => "users#create"
-  #
   # get 'users/edit' => "users#edit"
-  #
   # get 'users/update' => "users#update"
-  #
   # get 'users/destroy' => "users#destroy"
 
   get '/logout' => 'sessions#destroy', as: :logout

@@ -13,7 +13,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(params.require(:post).permit(:food, :description, :author))
+    @post = Post.new(post_params)
 
     if @post.save
       redirect_to posts_path
@@ -44,7 +44,7 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:food, :description, :author)
+    params.require(:post).permit(:food, :description, :author, :picture)
   end
 
 
