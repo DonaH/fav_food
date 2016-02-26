@@ -10,11 +10,12 @@
 <body>
 
   <% if logged_in? %>
-      <%= link_to "Logout", logout_path %>
+      <%= link_to "Logout | ", logout_path %>
   <% else %>
-      <%= link_to "Login", new_session_path %>
+      <%= link_to "Login | ", new_session_path %>
   <% end %>
-  <%= link_to "Posts", posts_path %>
+  <%= link_to "Posts | ", posts_path %>
+  <%= link_to "New Post", new_post_path %>
 
   <div class="container">
     <%= yield %>

@@ -1,5 +1,15 @@
 <!-- <h1>Users#show</h1>
 <p>Find me in app/views/users/show.html.erb</p> -->
 
-<h1>User Profile Page</h1>
-<h1> Hello!<%= current_user.name %></h1>
+<h1>Profile page</h1>
+<h2> Hello!<%= current_user.name %></h2>
+
+<h4><%= @user.email %></h4>
+
+<div class="btn-group">
+  <%= link_to 'Edit User', edit_user_path(current_user.id), class: "btn btn-primary" %>
+</div>
+<div class="btn-group">
+  <%= link_to 'Delete User', edit_user_path(current_user.id), method: :delete, data: { confirm: 'Are you sure?'}, class: "btn btn-danger" %>
+</div>
+</div>

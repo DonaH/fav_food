@@ -6,13 +6,13 @@ Rails.application.routes.draw do
   get 'sessions/create' => "sessions#create"
   get 'sessions/destroy' => "sessions#destroy"
 
-  # get 'users/index' => "users#index"
-  # get 'users/show' => "users#show"
   # get 'users/new' => "posts#new"
   # get 'users/create' => "users#create"
+  # get 'users/index' => "users#index"
+  # get 'users/show' => "users#show"
   # get 'users/edit' => "users#edit"
-  # get 'users/update' => "users#update"
-  # get 'users/destroy' => "users#destroy"
+  # get 'users/update' => "users#update", as: :update_user
+  # get 'users/destroy' => "users#destroy" as: :delete_user
 
   get '/logout' => 'sessions#destroy', as: :logout
   resources :sessions, only: [:new, :create]
@@ -24,7 +24,7 @@ Rails.application.routes.draw do
   #  root 'posts#index'
 
   get "posts/" => "posts#index"
-  get "posts/new" => "posts#new"
+  get "posts/new" => "posts#new", as: :new_post
   get "posts/:id" => "posts#show" , as:  :post
   post "posts/" => "posts#create"
   get "posts/:id/edit" => "posts#edit", as: :edit_post

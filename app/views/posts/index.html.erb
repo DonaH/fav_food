@@ -3,8 +3,9 @@
 <% @posts.each do |post| %>
   <h2>
     <%= link_to post.food, post_path(post) %>
+    <%= image_tag post.picture.url(:medium) %>
   </h2>
-  <p><%= post.description %></p>
-
+  <p><%= post.description %>
+      &nbsp by: <%= post.author %></p>
 
 <% end %>

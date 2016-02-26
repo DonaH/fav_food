@@ -3,7 +3,7 @@
 <%= form_for @post do |f| %>
 
     <div>
-        <%= f.label :food %>
+        <%= f.label :food%>
         <%= f.text_field :food %>
     </div>
 
@@ -20,14 +20,14 @@
     <div>
         <%= f.label :picture %>
         <%= f.file_field :picture %>
+        
+        <%= f.submit "Submit these changes!" %><br />
+        <%= link_to "Back to the list!", posts_path %>
     </div>
 
-    <div style="width: 175px; height: 100px;">
+    <div>
       <%= image_tag @post.picture.url %>
-    </div>
 
-    <%= f.submit "Submit these changes!" %>
+    </div>
 
 <% end %>
-
-<%= link_to "Back to the list!", posts_path %>
