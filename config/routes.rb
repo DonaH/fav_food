@@ -8,19 +8,19 @@ Rails.application.routes.draw do
 
   get 'sessions/destroy' => "sessions#destroy"
 
-  get 'users/index' => "users#index"
-
-  get 'users/show' => "users#show"
-
-  get 'users/new' => "users#new"
-
-  get 'users/create' => "users#create"
-
-  get 'users/edit' => "users#edit"
-
-  get 'users/update' => "users#update"
-
-  get 'users/destroy' => "users#destroy"
+  # get 'users/index' => "users#index"
+  #
+  # get 'users/show' => "users#show"
+  #
+  # get 'users/new' => "users#new"
+  #
+  # get 'users/create' => "users#create"
+  #
+  # get 'users/edit' => "users#edit"
+  #
+  # get 'users/update' => "users#update"
+  #
+  # get 'users/destroy' => "users#destroy"
 
   get '/logout' => 'sessions#destroy', as: :logout
   resources :sessions, only: [:new, :create]
