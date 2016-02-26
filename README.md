@@ -8,8 +8,8 @@ Sharing favorite food, and writing short notes to what you like about the food, 
 ## Technologies
 HTML, CSS, Bootstrap, Postgres, Ruby, Ruby on Rails.
 
-## Link
-[Favorite Food](http://donah.github.io/fav_food/)
+## Heroku Link
+[Favorite Food](https://boiling-lowlands-68422.herokuapp.com/)
 
 ## WIP
 Still continuing the debugging process.
