@@ -8,8 +8,8 @@ class SessionsController < ApplicationController
       session[:user_id] = @user.id
       redirect_to user_path(@user)
     else
-      puts "Authentication failed, please try again."
       redirect_to root_path
+      puts "Authentication failed, please try again."
     end
   end
 
