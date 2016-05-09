@@ -1,10 +1,15 @@
 Rails.application.routes.draw do
   root 'users#index'
   resources :users
+  resources :uploads
 
   get 'sessions/new' => "sessions#new"
   get 'sessions/create' => "sessions#create"
   get 'sessions/destroy' => "sessions#destroy"
+
+  get 'uploads/new'
+  get 'uploads/create'
+  get 'uploads/index'
 
   # get 'users/new' => "posts#new"
   # get 'users/create' => "users#create"
