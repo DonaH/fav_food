@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   resources :users
   resources :uploads
 
+  get "icons/generate" => "icons#generate", format: :svg
+
   get 'sessions/new' => "sessions#new"
   get 'sessions/create' => "sessions#create"
   get 'sessions/destroy' => "sessions#destroy"

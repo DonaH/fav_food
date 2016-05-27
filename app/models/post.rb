@@ -5,6 +5,6 @@ class Post < ActiveRecord::Base
     small: '140x140>',
     thumb: '64x64!'
   },
-  default_url: "/images/:style/missing.png"
+  default_url: "/app/assets/images/ff.svg"
   validates_attachment_content_type :picture, :content_type => /\Aimage\/.*\Z/
 end

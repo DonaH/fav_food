@@ -5,6 +5,12 @@ class ApplicationController < ActionController::Base
   # before_action :author, only: [:edit, :show]
   helper_method :current_user, :logged_in?
 
+  def generate
+    respond_to do |format|
+      format.svg { render inline: svg }
+    end
+  end
+
   def current_user
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
   end

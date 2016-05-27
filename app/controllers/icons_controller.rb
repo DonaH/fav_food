@@ -1,0 +1,18 @@
+class IconsController < ApplicationController
+  def generate
+    svg = '<svg width="136px" height="136px" viewBox="0 0 136 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <title>Artboard 1</title>
+        <desc>Created with Sketch.</desc>
+        <defs></defs>
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Artboard-1" stroke="#0DF6EB">
+                <rect id="Rectangle-1" stroke-width="8" x="0" y="0" width="136" height="136"></rect>
+                <path d="M99.6756757,13 L57.3030433,32.4353809 C48.5353622,36.4569206 31,44.5 31,44.5 L31,125" id="Path-1" stroke-width="6"></path>
+                <polyline id="Path-3" stroke-width="6" points="108 32.8333333 55.972973 57.7432432 55.972973 125"></polyline>
+                <path d="M33.0810811,80.6666667 L101.756757,80.6666667" id="Path-4" stroke-width="6"></path>
+                <circle id="Oval-1" fill="#0DF6EB" cx="98" cy="81" r="5"></circle>
+            </g>
+        </g>
+    </svg>'
+  end
+end
