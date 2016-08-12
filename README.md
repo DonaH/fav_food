@@ -9,7 +9,7 @@ Sharing favorite food, and writing short notes to what you like about the food, 
 HTML, CSS, Bootstrap, Postgres, Ruby, Ruby on Rails.
 
 ## Heroku Link
-[Favorite Food](https://boiling-lowlands-68422.herokuapp.com/)
+[Favorite Food](http://fav-food.herokuapp.com/)
 
 ## WIP
 Still continuing the debugging process.
